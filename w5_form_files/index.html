@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>W5 | Tables & Forms</title>
+
+    <style>
+        table, td {
+            border:1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Gavin's Birthday Party 4/28/23</h1>
+
+    
+    <hr>
+
+    <h2>Birthday Party Registration Form</h2>
+
+    <form method="GET" action="">
+
+        <table>
+
+            <!--thead - not required of tables but nice to have; column headers-->
+
+            <thead>
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <h2>Labels</h2>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <h2>Form Field</h2>
+
+                    </td>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <!--Table Row-->
+
+                <tr>
+
+                    <!--first column - LABEL -->
+
+                    <td>
+
+                        <label for="gName">Parent/Guardian Name:</label>
+
+                    </td>
+
+                    <!--second column- INPUT -->
+
+                    <td>
+
+                        <input type="text" name="fName" id="fName" placeholder="Your"><br>
+                        <input type="text" name="lName" id="lName" placeholder="Name">
+
+                    </td>
+                    
+
+                </tr>
+
+                <!--Table Row-->
+
+                <tr>
+
+                    <!--first column - LABEL -->
+
+                    <td>
+
+                        <label for="cName">Child's Name:</label>
+
+                    </td>
+
+                    <!--second column- INPUT -->
+
+                    <td>
+
+                        <input type="text" name="cName" id="cName">
+
+                    </td>
+
+                </tr>
+
+                <!--Table Row-->
+
+                <tr>
+
+                    <!--first column - LABEL -->
+
+                    <td>
+
+                        <label for="age">Child's Age:</label>
+
+                    </td>
+
+                    <!--second column- INPUT -->
+
+                    <td>
+
+                        <input type="number" name="age" id="age" min="0" max="150">
+
+                    </td>
+
+                </tr>
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <h2>Date & Time</h2>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <p>Gavin's birthday party will<br> be taking place on April<br> 28th, 2023 at 4:30 p.m. </p>
+
+                    </td>
+
+                </tr>
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <label for="Date">Date: </label>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <input type="date" name="date" id="date" required>
+
+                    </td>
+
+                </tr>
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <label for="sTime">Start Time:</label>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <input type="time" name="time" id="time">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <label for="guests">Number of Guests:</label>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+                        <input type="number" name="guests" id="guests">
+
+                    </td>
+
+                </tr>
+
+                <!--new row-->
+
+                
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                       
+
+                        <h2>Food</h2>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+                        <p>Pizza, Pasta, Salad, Cake</p>
+                        
+                    </td>
+
+                </tr>
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        <label for="drinks">Drink Options:</label>
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <input type="checkbox" name="drink1" id="drink1" value="water">
+                        <label for="drink1">Water</label>
+                        <br>
+                        <input type="checkbox" name="drink2" id="drink2" value="coke">
+                        <label for="drink2">Coke</label>
+                        <br>
+                        <input type="checkbox" name="drink3" id="drink3" value="fruit-punch">
+                        <label for="drink3">Fruit Punch</label>
+                        <br>
+                        <input type="checkbox" name="drink4" id="drink4" value="sprite">
+                        <label for="drink4">Sprite</label>
+                        <br>
+                        <input type="checkbox" name="drink5" id="drink5" value="lemonade">
+                        <label for="drink5">Lemonade</label>
+                        <br>
+                        <input type="checkbox" name="drink6" id="drink6" value="ice-tea">
+                        <label for="drink6">Ice Tea</label>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <label for="drink-size">Drink Size:</label>
+                    </td>
+
+                    <td>
+                        
+                        <input type="checkbox" name="size1" id="size1" value="sm">
+                        <label for="size1">sm</label>
+                        <input type="checkbox" name="size2" id="size2" value="med">
+                        <label for="size2">med</label>
+                        <input type="checkbox" name="size3" id="size3" value="lg">
+                        <label for="size3">lg</label>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="cake">Cake:</label>
+                    </td>
+                    
+                    <td>
+
+                        <select name="cake" id="cake">
+                            <!--user is restricted to only selecting one option-->
+                            <option value="c" style="color: rgb(39, 25, 3);">Chocolate</option>
+                            <option value="v" style="color: rgb(87, 171, 182);">Vanilla</option>
+                            <option value="o">I'll bring my own</option>
+                       </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <h2>Decorations</h2>
+
+                    </td>
+
+                    <td>
+
+                        <p>The theme for Gavin's<br> birthday will an underwater<br> setting with fitting<br> decorations.</p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <label for="colorscheme" id="colorscheme">Color Scheme:</label>
+
+                    </td>
+
+                    <td>
+
+                        <p>Choose a color Scheme<br> for Gavin's Birthday<br></p>
+                        <input type="color" name="colorscheme" id="colorscheme">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <label for="comments">Additional Comments:</label>
+
+                    </td>
+
+                    <td>
+
+                        <textarea name="comments" id="comments" placeholder="Leave your comment here..."></textarea>
+
+                    </td>
+
+                </tr>
+
+                <!--SUBMIT BUTTON - clicking checks that form is filled "corretly" (meets requirements) and then runs the action if present-->
+
+                <!--new row-->
+
+                <tr>
+
+                    <!--left column (labels)-->
+
+                    <td>
+
+                        
+
+                    </td>
+
+                    <!--right column (inputs)-->
+
+                    <td>
+
+                        <input type="submit" value="SUBMIT :]">
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
